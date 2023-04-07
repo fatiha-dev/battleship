@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battleship game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="game-info">
+      <p>Turn: <span data-turn-display></span></p>
+      <p>Info: <span data-info></span></p>
+    </div>
+
+    <div class="gameBoard-container" data-game-board></div>
+    <div class="option-container" data-option-container>
+      <div class="destroyer-preview destroyer" draggable="true"></div>
+      <div class="submarine-preview submarine" draggable="true"></div>
+      <div class="crusier-preview crusier" draggable="true"></div>
+      <div class="battleship-preview battleship" draggable="true"></div>
+      <div class="carrier-preview carrier" draggable="true"></div>
+    </div>
+    <button class="flip-button" data-flip-button>flip</button>
+    <button class="start-button" data-start-button>start</button>
+  <script type="module" src="main.js"></script>
+  </body>
+</html>
